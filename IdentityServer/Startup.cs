@@ -18,7 +18,7 @@ namespace IdentityServer
         {
 
             var builder = services.AddIdentityServer()
-                            .AddDeveloperSigningCredential()        //This is for dev only scenarios when you don’t have a certificate to use.
+                            .AddDeveloperSigningCredential() 
                             .AddInMemoryApiScopes(Config.ApiScopes)
                             .AddInMemoryClients(Config.Clients);
 
